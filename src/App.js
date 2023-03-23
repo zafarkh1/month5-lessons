@@ -1,11 +1,13 @@
+import Home from './components/to-do/ToDo'
+
 import './App.css';
-import ComponentA from './component/ComponentA'
+import ToDo from './components/to-do/ToDo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ComponentA />
+				<ToDo />
       </header>
     </div>
   );
