@@ -1,0 +1,16 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 450px;
+  max-height: 550px;
+	border-radius: 5px;
+  .card-image {
+    width: 100%;
+    height: 217px;
+    object-fit: cover;
+  }
+  .text {
+    padding: 20px;
+  }
+}

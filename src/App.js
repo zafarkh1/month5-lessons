@@ -1,12 +1,15 @@
-import './App.css';
-import ComponentA from './component/ComponentA'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Home from "./components/home/Home";
+import SingleArticle from "./components/spaPparam/SingleArticle";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ComponentA />
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="news/:id" element={SingleArticle}/>
+      </Routes>
     </div>
   );
 }
